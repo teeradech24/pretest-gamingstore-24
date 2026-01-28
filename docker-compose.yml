@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   php:
-    container_name: stock_php
+    container_name: stock_php_24
     build: .
     ports:
       - "8001:80"
@@ -14,7 +14,7 @@ services:
       - app-network
 
   db:
-    container_name: stock_db
+    container_name: stock_db_24
     image: mariadb:10.6
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
@@ -27,12 +27,12 @@ services:
       - app-network
 
   phpmyadmin:
-    container_name: stock_pma
+    container_name: stock_pma_24
     image: phpmyadmin/phpmyadmin
     ports:
       - "8080:80"
     environment:
-      PMA_HOST: stock_db
+      PMA_HOST: stock_db_24
       MYSQL_ROOT_PASSWORD: rootpassword
     depends_on:
       - db
