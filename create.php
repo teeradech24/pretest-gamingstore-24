@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>เพิ่มสินค้า - G-STORE</title>
+    <title>เพิ่มสินค้า - PC MASTER</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <nav class="navbar">
         <div class="brand">
-            <i class="fas fa-gamepad"></i> G-STORE
+            <i class="fas fa-desktop"></i> PC-MASTER
         </div>
         <div class="nav-links">
             <a href="index.php">ย้อนกลับ</a>
@@ -57,17 +57,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <form method="POST">
                 <div class="form-group">
                     <label class="form-label">ชื่อสินค้า</label>
-                    <input type="text" name="name" class="form-control" required placeholder="Ex. Logitech G Pro X">
+                    <input type="text" name="name" class="form-control" required placeholder="Ex. ASUS ROG Strix G16">
                 </div>
 
                 <div class="form-group">
                     <label class="form-label">หมวดหมู่</label>
                     <select name="category" class="form-control" required>
-                        <option value="Mouse">Mouse (เมาส์)</option>
-                        <option value="Keyboard">Keyboard (คีย์บอร์ด)</option>
-                        <option value="Headset">Headset (หูฟัง)</option>
+                        <option value="Laptop">Laptop (โน้ตบุ๊ก)</option>
+                        <option value="CPU">CPU (ซีพียู)</option>
+                        <option value="GPU">GPU (การ์ดจอ)</option>
+                        <option value="RAM">RAM (แรม)</option>
+                        <option value="Mainboard">Mainboard (เมนบอร์ด)</option>
+                        <option value="Storage">Storage (SSD/HDD)</option>
+                        <option value="Power Supply">Power Supply (พาวเวอร์ซัพพลาย)</option>
                         <option value="Monitor">Monitor (จอภาพ)</option>
-                        <option value="Accessory">Accessory (อุปกรณ์เสริม)</option>
+                        <option value="Peripheral">Peripheral (อุปกรณ์ต่อพ่วง)</option>
+                        <option value="Accessory">Accessory (อุปกรณ์เสริมอื่นๆ)</option>
                     </select>
                 </div>
 

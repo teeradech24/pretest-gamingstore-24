@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>แก้ไขสินค้า - G-STORE</title>
+    <title>แก้ไขสินค้า - PC MASTER</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -55,7 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <nav class="navbar">
         <div class="brand">
-            <i class="fas fa-gamepad"></i> G-STORE
+            <i class="fas fa-desktop"></i> PC-MASTER
         </div>
         <div class="nav-links">
             <a href="index.php">ย้อนกลับ</a>
@@ -86,7 +86,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <label class="form-label">หมวดหมู่</label>
                     <select name="category" class="form-control" required>
                         <?php
-                        $categories = ['Mouse', 'Keyboard', 'Headset', 'Monitor', 'Accessory'];
+                        $categories = ['Laptop', 'CPU', 'GPU', 'RAM', 'Mainboard', 'Storage', 'Power Supply', 'Monitor', 'Peripheral', 'Accessory'];
                         foreach ($categories as $cat) {
                             $selected = ($product['category'] === $cat) ? 'selected' : '';
                             echo "<option value='$cat' $selected>$cat</option>";

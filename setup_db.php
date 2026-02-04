@@ -19,11 +19,13 @@ try {
     $stmt = $pdo->query("SELECT COUNT(*) FROM products");
     if ($stmt->fetchColumn() == 0) {
         $sample_sql = "INSERT INTO products (name, category, price, stock, image_url) VALUES 
-            ('Pro Gaming Mouse X1', 'Mouse', 1590.00, 50, 'https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=500&q=80'),
-            ('Mechanical Keyboard RGB', 'Keyboard', 2990.00, 30, 'https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?auto=format&fit=crop&w=500&q=80'),
-            ('7.1 Surround Headset', 'Headset', 1290.00, 25, 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=80');";
+            ('ASUS ROG Strix G16', 'Laptop', 45900.00, 10, 'https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=500&q=80'),
+            ('Intel Core i9-13900K', 'CPU', 22500.00, 15, 'https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=500&q=80'),
+            ('NVIDIA RTX 4080 Super', 'GPU', 42900.00, 5, 'https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=500&q=80'),
+            ('Samsung Odyssey G7 28\"', 'Monitor', 18900.00, 8, 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=500&q=80'),
+            ('Logitech G Pro X Superlight', 'Peripheral', 4590.00, 25, 'https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=500&q=80');";
         $pdo->exec($sample_sql);
-        echo "Database initialized with sample data.";
+        echo "Database initialized with computer store sample data.";
     } else {
         echo "Database already initialized.";
     }

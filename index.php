@@ -11,7 +11,7 @@ require_once 'db.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaming Store System</title>
+    <title>ร้านจำหน่ายอุปกรณ์IT - IT SHOP</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -20,7 +20,7 @@ require_once 'db.php';
 <body>
     <nav class="navbar">
         <div class="brand">
-            <i class="fas fa-gamepad"></i> G-STORE
+            <i class="fas fa-desktop"></i> PC-MASTER
         </div>
         <div class="nav-links">
             <a href="index.php" class="active">หน้าแรก</a>
@@ -31,8 +31,9 @@ require_once 'db.php';
     <div class="container fade-in">
         <div class="page-header">
             <div>
-                <h1 class="page-title">จัดการสินค้า</h1>
-                <p style="color: var(--text-secondary); margin-top: 0.5rem;">ระบบจัดการคลังสินค้าอุปกรณ์เกมมิ่ง</p>
+                <h1 class="page-title">ระบบจัดการสต็อก</h1>
+                <p style="color: var(--text-secondary); margin-top: 0.5rem;">
+                    จัดการคลังสินค้าอุปกรณ์คอมพิวเตอร์และโน้ตบุ๊ก</p>
             </div>
             <a href="create.php" class="btn btn-primary">
                 <i class="fas fa-plus"></i> เพิ่มสินค้าใหม่
